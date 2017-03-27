@@ -19,6 +19,7 @@ class TeamMemberController {
                     let jsonResultArray: NSArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
                     
                     if let resultsArray : [NSDictionary] = jsonResultArray as? [NSDictionary] {
+                        
                         for resultDictionary: NSDictionary in resultsArray {
                             
                             if let teamMember = TeamMember(jsonDictionary: resultDictionary as! [String : AnyObject]) {
@@ -31,4 +32,5 @@ class TeamMemberController {
         }
         return teamMembers
     }
+    
 }

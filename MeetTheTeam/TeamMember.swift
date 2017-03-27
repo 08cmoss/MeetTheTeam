@@ -17,7 +17,7 @@ class TeamMember {
     private let kBio = "bio"
     private let kTitle = "title"
     
-    var id: Int
+    var id: String = ""
     var firstName: String = ""
     var lastName: String = ""
     var avatar: String = ""
@@ -26,7 +26,7 @@ class TeamMember {
     
     init?(jsonDictionary: [String: AnyObject]) {
         
-        guard let id = jsonDictionary[kID] as? Int else { return nil }
+        guard let id = jsonDictionary[kID] as? String else { return nil }
         self.id = id
         self.firstName = jsonDictionary[kFirstName] as? String ?? ""
         self.lastName = jsonDictionary[kLastName] as? String ?? ""

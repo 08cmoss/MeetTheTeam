@@ -17,6 +17,7 @@
 		1A4DCACB1E89A9F6000F7DA0 /* TeamMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DCACA1E89A9F6000F7DA0 /* TeamMemberController.swift */; };
 		1A4DCACF1E89B352000F7DA0 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DCACE1E89B352000F7DA0 /* TeamViewController.swift */; };
 		1A4DCAD11E89C83C000F7DA0 /* TeamMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DCAD01E89C83C000F7DA0 /* TeamMemberCollectionViewCell.swift */; };
+		1A4DCAD31E89D1B4000F7DA0 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DCAD21E89D1B4000F7DA0 /* TeamDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1A4DCACA1E89A9F6000F7DA0 /* TeamMemberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMemberController.swift; sourceTree = "<group>"; };
 		1A4DCACE1E89B352000F7DA0 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		1A4DCAD01E89C83C000F7DA0 /* TeamMemberCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMemberCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A4DCAD21E89D1B4000F7DA0 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				1A4DCA981E89A879000F7DA0 /* AppDelegate.swift */,
 				1A4DCACE1E89B352000F7DA0 /* TeamViewController.swift */,
+				1A4DCAD21E89D1B4000F7DA0 /* TeamDetailViewController.swift */,
 				1A4DCAC81E89A8FA000F7DA0 /* TeamMember.swift */,
 				1A4DCACA1E89A9F6000F7DA0 /* TeamMemberController.swift */,
 				1A4DCAD01E89C83C000F7DA0 /* TeamMemberCollectionViewCell.swift */,
@@ -275,6 +278,7 @@
 				1A4DCA991E89A879000F7DA0 /* AppDelegate.swift in Sources */,
 				1A4DCAD11E89C83C000F7DA0 /* TeamMemberCollectionViewCell.swift in Sources */,
 				1A4DCAC91E89A8FA000F7DA0 /* TeamMember.swift in Sources */,
+				1A4DCAD31E89D1B4000F7DA0 /* TeamDetailViewController.swift in Sources */,
 				1A4DCACF1E89B352000F7DA0 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

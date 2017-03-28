@@ -18,6 +18,7 @@ class TeamViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "Meet The Team"
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
         layout.itemSize = CGSize(width: self.view.frame.size.width/2 - 16, height: 200)
@@ -52,27 +53,14 @@ class TeamViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //let selectedCell = collectionView.cellForItem(at: indexPath) as! TeamMemberCollectionViewCell
         let detailViewController = TeamDetailViewController()
         let teamMember = teamMembers[indexPath.row]
-        detailViewController.nameLabel.text = "\(teamMember.firstName) \(teamMember.lastName))"
+        detailViewController.nameLabel.text = "\(teamMember.firstName) \(teamMember.lastName)"
         detailViewController.titleLabel.text = teamMember.title
         detailViewController.imageView.downloadedFrom(link: teamMember.avatar)
         detailViewController.bioTextView.text = teamMember.bio
         navigationController?.pushViewController(detailViewController, animated: true)
         
-    }
-    
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-//        let detailViewController = segue.destination as! TeamDetailViewController
-//        if let cell = sender as? TeamMemberCollectionViewCell, let indexPath = collectionView.indexPath(for: cell) {
     }
     
 

@@ -25,7 +25,7 @@ class TeamMemberCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(imageView)
         
         titleLabel = UILabel(frame: CGRect(x: 0, y: imageView.frame.size.height, width: frame.size.width, height: frame.size.height/3))
-        titleLabel.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
+        titleLabel.font = UIFont.italicSystemFont(ofSize: UIFont.smallSystemFontSize)
         titleLabel.textAlignment = .center
         contentView.addSubview(titleLabel)
         

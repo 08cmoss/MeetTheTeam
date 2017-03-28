@@ -31,7 +31,7 @@ class TeamMember {
         self.firstName = jsonDictionary[kFirstName] as? String ?? ""
         self.lastName = jsonDictionary[kLastName] as? String ?? ""
         self.avatar = jsonDictionary[kAvatar] as? String ?? ""
-        self.bio = jsonDictionary[bio] as? String ?? ""
+        self.bio = jsonDictionary[kBio] as? String ?? ""
         self.title = jsonDictionary[kTitle] as? String ?? ""
         
     }
